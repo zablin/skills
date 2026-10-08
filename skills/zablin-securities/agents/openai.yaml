@@ -1,0 +1,4 @@
+interface:
+  display_name: "三问主线 · 六问验证"
+  short_description: "用稀缺性、价值传导、价值捕获分析产业与公司，并用六问和证据验证受益链"
+  default_prompt: "使用 $zablin-securities 分析这家公司或产业机会，用三问形成因果链，用六问补充公司证据，并给出条件式结论、最薄弱环节和反转信号。"
