@@ -31,35 +31,50 @@
 | 技能 | 用来做什么 | 状态 |
 | --- | --- | --- |
 | [**zablin-Paper**](skills/zablin-paper/) | 讲清论文的研究问题、作者贡献、关键证据与结论边界，提炼可迁移的认知模型。 | 已收录 |
+| [**zablin-GradualLearning**](skills/zablin-gradual-learning/) | 渐构学习：拆解知识、建立判别与联结模型、伴读文本，并用未见情境验证学习成果。 | 已收录 · v2.0.0 |
 
 ## 如何使用
 
-打开 [zablin-Paper 的 SKILL.md](skills/zablin-paper/SKILL.md)，查看适用场景与执行流程。参考材料、模板和评测用例均保留在同一技能目录中。
+打开对应的主规则，查看适用场景与执行流程：
+
+- [zablin-Paper](skills/zablin-paper/SKILL.md)：论文阅读与分析。
+- [zablin-GradualLearning](skills/zablin-gradual-learning/SKILL.md)：知识拆解、伴读与学习验证。
+
+参考材料、模板和评测用例均保留在同一技能目录中。
 
 安装后的调用示例：
 
 ```text
 用 zablin-Paper 解读这篇论文：<论文链接或文件>
 重点说明作者解决了什么问题、证据支持到哪里，以及哪些方法值得迁移。
+
+用 zablin-GradualLearning 帮我理解这个概念，
+用正例、反例与未见情境检验我是否真正会用。
 ```
 
-在 GitHub 点击 **Code → Download ZIP**，解压后将完整的 `skills/zablin-paper/` 文件夹放入 Codex 的技能目录 `~/.agents/skills/`。请保留子目录，避免参考材料与模板丢失。当前电脑已安装该 Skill，无需重复安装。
+在 GitHub 点击 **Code → Download ZIP**，解压后将 `skills/` 下需要的完整技能文件夹放入 Codex 的技能目录 `~/.agents/skills/`。保留参考材料、模板和示例等子目录；已安装的技能无需重复安装。
 
 ## 仓库结构
 
 当前目录结构：
 
 ```text
-skills/
+zablin-skills/
 ├── README.md
-├── assets/
-│   └── banner.svg
+├── assets/banner.svg
 └── skills/
-    └── zablin-paper/
-        ├── SKILL.md          # 使用场景与执行流程
-        ├── references/       # 按需提供的参考材料
-        ├── templates/        # 按需提供的输出模板
-        └── evals/            # 按需提供的评测用例
+    ├── zablin-paper/
+    │   ├── SKILL.md
+    │   ├── references/
+    │   ├── templates/
+    │   └── evals/
+    └── zablin-gradual-learning/
+        ├── SKILL.md
+        ├── README.md
+        ├── references/
+        ├── templates/
+        ├── examples/
+        └── evals/
 ```
 
 ## 维护方式
