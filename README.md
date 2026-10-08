@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <strong>学习 · 阅读 · 研究</strong><br />
+  <strong>学习 · 阅读 · 研究 · 写作</strong><br />
   我的个人 AI 技能集，把反复打磨的方法整理成可以持续使用的 Skill。
 </p>
 
@@ -33,6 +33,7 @@
 | [**zablin-Paper**](skills/zablin-paper/) | 讲清论文的研究问题、作者贡献、关键证据与结论边界，提炼可迁移的认知模型。 | 已收录 |
 | [**zablin-GradualLearning**](skills/zablin-gradual-learning/) | 渐构学习：拆解知识、建立判别与联结模型、伴读文本，并用未见情境验证学习成果。 | 已收录 · v2.0.0 |
 | [**zablin-security**](skills/zablin-security/) | 三问主线 · 六问验证：追踪产业稀缺性、价值传导与价值捕获，以公司证据检验利润、现金及反转条件。 | 已收录 |
+| [**zablin-Writer**](skills/zablin-writer/) | 中文长文写作：把观点、研究与零散素材整理成逻辑清楚、具有阅读动力的文章，并检查证据、迁移边界与作者声音。 | 已收录 |
 
 ## 如何使用
 
@@ -40,8 +41,9 @@
 
 - [zablin-Paper](skills/zablin-paper/SKILL.md)：论文阅读与分析。
 - [zablin-GradualLearning](skills/zablin-gradual-learning/SKILL.md)：知识拆解、伴读与学习验证。
-
 - [zablin-security](skills/zablin-security/SKILL.md)：产业与公司商业判断，配套数据溯源规则。
+
+- [zablin-Writer](skills/zablin-writer/SKILL.md)：中文长文、公众号文章与旧稿重写。
 
 参考材料、模板和评测用例均保留在同一技能目录中。
 
@@ -56,6 +58,9 @@
 
 用 zablin-security 按三问主线、六问验证分析这家公司，
 重点检查价值如何传导到公司、能否转化为利润与现金。
+
+用 zablin-Writer 把这些观点和素材写成一篇中文长文，
+讲清核心判断、证据与边界，兼顾文章结构和阅读节奏。
 ```
 
 在 GitHub 点击 **Code → Download ZIP**，解压后将 `skills/` 下需要的完整技能文件夹放入 Codex 的技能目录 `~/.agents/skills/`。保留参考材料、模板和示例等子目录；已安装的技能无需重复安装。
@@ -75,16 +80,21 @@ zablin-skills/
     │   ├── templates/
     │   └── evals/
     ├── zablin-gradual-learning/
+    │   ├── SKILL.md
+    │   ├── README.md
+    │   ├── references/
+    │   ├── templates/
+    │   ├── examples/
+    │   └── evals/
+    ├── zablin-security/
+    │   ├── SKILL.md
+    │   ├── agents/openai.yaml
+    │   └── references/data-provenance.md
+    └── zablin-writer/
         ├── SKILL.md
-        ├── README.md
         ├── references/
-        ├── templates/
-        ├── examples/
-        └── evals/
-    └── zablin-security/
-        ├── SKILL.md
-        ├── agents/openai.yaml
-        └── references/data-provenance.md
+        ├── templates/article-map.md
+        └── evals/evals.json
 ```
 
 ## 维护方式
