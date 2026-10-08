@@ -30,7 +30,7 @@
 
 | 技能 | 用来做什么 | 状态 |
 | --- | --- | --- |
-| [**zablin-Paper**](skills/zablin-paper/) | 讲清论文的研究问题、作者贡献、关键证据与结论边界，提炼可迁移的认知模型。 | 已收录 |
+| [**zablin-paper**](skills/zablin-paper/) | 面向非专业读者重建论文问题与贡献，分级核验证据；按需使用机制、第一性原理、贝叶斯与现代重估模块。 | 已收录 |
 | [**zablin-GradualLearning**](skills/zablin-gradual-learning/) | 渐构学习：拆解知识、建立判别与联结模型、伴读文本，并用未见情境验证学习成果。 | 已收录 · v2.0.0 |
 | [**zablin-security**](skills/zablin-security/) | 三问主线 · 六问验证：追踪产业稀缺性、价值传导与价值捕获，以公司证据检验利润、现金及反转条件。 | 已收录 |
 | [**zablin-Writer**](skills/zablin-writer/) | 中文长文写作：把观点、研究与零散素材整理成逻辑清楚、具有阅读动力的文章，并检查证据、迁移边界与作者声音。 | 已收录 |
@@ -39,7 +39,7 @@
 
 打开对应的主规则，查看适用场景与执行流程：
 
-- [zablin-Paper](skills/zablin-paper/SKILL.md)：论文阅读与分析。
+- [zablin-paper](skills/zablin-paper/SKILL.md)：论文阅读与分析。
 - [zablin-GradualLearning](skills/zablin-gradual-learning/SKILL.md)：知识拆解、伴读与学习验证。
 - [zablin-security](skills/zablin-security/SKILL.md)：产业与公司商业判断，配套数据溯源规则。
 
@@ -50,7 +50,7 @@
 安装后的调用示例：
 
 ```text
-用 zablin-Paper 解读这篇论文：<论文链接或文件>
+用 zablin-paper 解读这篇论文：<论文链接或文件>
 重点说明作者解决了什么问题、证据支持到哪里，以及哪些方法值得迁移。
 
 用 zablin-GradualLearning 帮我理解这个概念，

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zablin Paper"
+  short_description: "用通俗方式解释论文、证据边界与可迁移洞见"
+  default_prompt: "使用 $zablin-paper 向非专业读者解释这篇研究论文，包括它的核心贡献、证据边界，以及真正可迁移的洞见。"
